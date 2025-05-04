@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Create New User</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.name.label_tag }} {{ form.name }}
+        </div>
+        <div class="mb-3">
+            {{ form.email.label_tag }} {{ form.email }}
+        </div>
+        <div class="mb-3">
+            {{ form.role.label_tag }} {{ form.role }}
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="{% url 'user_list' %}" class="btn btn-secondary">Back</a>
+        {% comment %} {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button> {% endcomment %}
+    </form>
+</div>
+</body>
+</html>
