@@ -80,8 +80,12 @@ This is a simple Django web application for managing users with roles such as "a
 
 ### Retrieve all users:
 - `SELECT * FROM users;`
+![image](https://github.com/user-attachments/assets/884e8d90-9f46-42f4-b061-d918d2ee0500)
 
 
 ### Retrieve a user by ID:
 - `SELECT * FROM users WHERE id = 1;`
+![image](https://github.com/user-attachments/assets/ad201451-8107-4fc2-a876-a4357e9d7585)
+
+
 
