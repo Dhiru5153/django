@@ -53,3 +53,33 @@ python manage.py runserver
 ## Dependencies are listed in requirements.txt. To install:
 pip install -r requirements.txt
 
+### This is a simple web application built with **Django** (can be adapted for Flask) that allows for:
+
+- Creating users
+- Viewing users
+- Viewing user details
+- Assigning user roles (Admin/User)
+
+---
+
+## Features
+
+- `/users` → View all users in a table.
+- `/users/<id>` → View a specific user's details.
+- `/new_user` → Submit form to add a new user.
+- `/hello` → Simple test route returning "Hello, World!"
+
+### Insert sample data:
+INSERT INTO users (name, email, role) VALUES
+('dharmendra', 'dharmendra@gmail.com', 'admin'),
+('ajay', 'ajay@gmail.com', 'user'),
+('vijay', 'vijay@gmail.com', 'user');
+
+
+### Retrieve all users:
+SELECT * FROM users;
+
+
+### Retrieve a user by ID:
+SELECT * FROM users WHERE id = 1;
+
