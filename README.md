@@ -6,7 +6,7 @@ This is a simple Django web application for managing users with roles such as "a
 
 ### 1. Clone the Repository
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/Dhiru5153/django.git
 cd your-repo-name
 
 ### 2. Set Up a Virtual Environment
