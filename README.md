@@ -85,3 +85,6 @@ This is a simple Django web application for managing users with roles such as "a
 ### Retrieve a user by ID:
 - `SELECT * FROM users WHERE id = 1;`
 
+![image](https://github.com/user-attachments/assets/884e8d90-9f46-42f4-b061-d918d2ee0500)
+
+
