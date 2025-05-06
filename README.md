@@ -6,6 +6,7 @@ This is a simple Django web application for managing users with roles such as "a
 
 ### 1. Clone the Repository
 
+<<<<<<< HEAD
 - `git clone https://github.com/Dhiru5153/django.git`
 - `cd django`
 - `git branch -a`
@@ -18,11 +19,27 @@ This is a simple Django web application for managing users with roles such as "a
 
 ### 3. Install Dependencies
 - `pip install -r requirements.txt`
+=======
+git clone https://github.com/Dhiru5153/django.git
+cd user_project
+
+### 2. Set Up a Virtual Environment
+python -m venv venv
+source venv/bin/activate 
+#On Windows use: venv\Scripts\activate
+
+### 3. Install Dependencies
+pip install -r requirements.txt
+>>>>>>> steptech_assignment
 
 ###  4. Configure MySQL Database
 
 ## Update the DATABASES section in settings.py:
+<<<<<<< HEAD
 - `DATABASES = {
+=======
+DATABASES = {
+>>>>>>> steptech_assignment
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'users_db',
@@ -31,6 +48,7 @@ This is a simple Django web application for managing users with roles such as "a
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
+<<<<<<< HEAD
 }`
 
 ##  Make sure the database exists:
@@ -49,11 +67,35 @@ This is a simple Django web application for managing users with roles such as "a
 
 - `python manage.py runserver`
 - #Visit http://127.0.0.1:8000 to use the application.
+=======
+}
+
+##  Make sure the database exists:
+CREATE DATABASE users_db;
+
+###  5. Apply Migrations
+
+python manage.py makemigrations
+python manage.py migrate
+
+###  6. Create a Superuser (Optional)
+
+python manage.py createsuperuser
+
+###  7. Run the Server
+
+python manage.py runserver
+#Visit http://127.0.0.1:8000 to use the application.
+>>>>>>> steptech_assignment
 
 ###  Requirements
 
 ## Dependencies are listed in requirements.txt. To install:
+<<<<<<< HEAD
 - `pip install -r requirements.txt`
+=======
+pip install -r requirements.txt
+>>>>>>> steptech_assignment
 
 ### This is a simple web application built with **Django** (can be adapted for Flask) that allows for:
 
@@ -72,6 +114,7 @@ This is a simple Django web application for managing users with roles such as "a
 - `/hello` → Simple test route returning "Hello, World!"
 
 ### Insert sample data:
+<<<<<<< HEAD
 - `INSERT INTO users (name, email, role) VALUES
 ('dharmendra', 'dharmendra@gmail.com', 'admin'),
 ('ajay', 'ajay@gmail.com', 'user'),
@@ -88,4 +131,18 @@ This is a simple Django web application for managing users with roles such as "a
 ![image](https://github.com/user-attachments/assets/ad201451-8107-4fc2-a876-a4357e9d7585)
 
 
+=======
+INSERT INTO users (name, email, role) VALUES
+('dharmendra', 'dharmendra@gmail.com', 'admin'),
+('ajay', 'ajay@gmail.com', 'user'),
+('vijay', 'vijay@gmail.com', 'user');
+
+
+### Retrieve all users:
+SELECT * FROM users;
+
+
+### Retrieve a user by ID:
+SELECT * FROM users WHERE id = 1;
+>>>>>>> steptech_assignment
 
